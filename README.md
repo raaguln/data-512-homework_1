@@ -24,7 +24,7 @@ The `data_acquisition.ipynb` notebook creates the following data files -
 All three files share the same data schema, which is listed below - 
 ```JSON
 {
-    'disease1': [
+    "disease1": [
         {
             "project": "en.wikipedia",
             "article": "18p",
