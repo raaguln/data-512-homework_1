@@ -7,7 +7,8 @@
 
 ## Licenses
 1. Code used in `data_acquisition.ipynb` - This code example extended by the code snippets developed by Dr. David W. McDonald for use in DATA 512, a course in the UW MS Data Science degree program. This code is provided under the [Creative Commons](https://creativecommons.org) [CC-BY license](https://creativecommons.org/licenses/by/4.0/). Revision 1.3 - August 16, 2024
-2. This dataset was created in accordance with the [Wikimedia Foundation Terms of Use](https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use), which states that we are good to create this dataset and use it for our analysis as long as we don't violate their UCoC and other terms and policies. 
+2. This dataset was created in accordance with the [Wikimedia Foundation Terms of Use](https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use), which states that we are good to create this dataset and use it for our analysis as long as we don't violate their UCoC and other terms and policies.
+3. The list of rare diseases seems to be derived from the [National Organization for Rare Diseases](https://rarediseases.org/), and care was taken to ensure that this project was in adherance to their [terms and conditions](https://rarediseases.org/terms-conditions/).
 
 ## Links to API documentation
 1. Pageviews data was fetched using the [Wikimedia Analytics API](https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/reference/page-views.html). Careful consideration was given to adhere to not bombard their platform with too many requests - The Pageviews API asks that we not exceed 100 requests per second, we add a small delay to each request.
@@ -67,16 +68,3 @@ urllib.parse.quote(request_template['article'].replace(' ','_'), safe='')
 in order for it to work.
 
 2. If you are running `data_acquisition.ipynb`, [this is exactly how long it will take](https://www.youtube.com/watch?v=OWAevdIrLE8) for the API calls to finish, so grab some popcorn. Pro tip: Don't, just use the JSON files.
-
-
-
----
----
----
----
-
-# Dump to delete
-
-Clearly name any intermediary data files and any final output files that your code creates. 
-For any files that your code creates you should provide a data schema and brief description
-List any known issues or special considerations with the data that would be useful for another researcher to know. 
