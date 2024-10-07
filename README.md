@@ -33,7 +33,6 @@ All three files share the same data schema, which is listed below -
             "article": "18p",           # article title
             "granularity": "monthly",   # won't change
             "timestamp": "2015070100",  # timestamp
-            "access": "all-access",     # won't change
             "views": 24                 # pageviews
         },
         {
@@ -41,7 +40,6 @@ All three files share the same data schema, which is listed below -
             "article": "18p",
             "granularity": "monthly",
             "timestamp": "2015080100",
-            "access": "all-access",
             "views": 24
         },
         ...(and so on for all months till September 30, 2024)
